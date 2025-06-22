@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', '.', 'gs://YOUR_BUCKET_NAME']
+
+# Optionally, define the location of the index page and error page for static hosting
+# You can also include a timeout and other metadata if needed
